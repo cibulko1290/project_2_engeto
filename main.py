@@ -15,7 +15,7 @@ def generate_secret_number():
     first = random.choice(range(1,10))
     other = random.sample([n for n in range(10) if n != first], 3)
     return str(first) + ''.join(map(str, other))
-3908
+
 def validate_guess(guess):
     '''
     Validate the user's guess for the Bulls and Cows game.
@@ -115,4 +115,5 @@ while True:
 
 print(f'{delimiter} \nGame statistics \n{delimiter}')
 for i, stat in enumerate(statistics, 1):
+
     print(f'Game {i}: {stat["attempts"]} attempts, {stat["time"]:.2f} seconds')
