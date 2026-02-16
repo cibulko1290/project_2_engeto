@@ -115,5 +115,4 @@ while True:
 
 print(f'{delimiter} \nGame statistics \n{delimiter}')
 for i, stat in enumerate(statistics, 1):
-
     print(f'Game {i}: {stat["attempts"]} attempts, {stat["time"]:.2f} seconds')
